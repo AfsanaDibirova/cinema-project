@@ -4,7 +4,7 @@ let getLoggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
 
 
 
-loggedEmail.innerHTML = getLoggedInUser.email;
+loggedEmail.innerHTML = `${getLoggedInUser?  getLoggedInUser.email: ''}` ;
 
 
 let videosContainer = document.querySelector(".videos_container");
