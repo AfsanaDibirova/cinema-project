@@ -1,4 +1,5 @@
 let loggedEmail = document.querySelector('.logged_container p');
+let logOut = document.querySelector('.logged_container svg');
 
 let getLoggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
 
@@ -20,9 +21,17 @@ let rightSliderIcon1 = document.querySelector('.right_slider_icon1');
 let actionAdventureContainer = document.querySelector("#action_adventure_container");
 let leftSliderIcon2 = document.querySelector('.left_slider_icon2');
 let rightSliderIcon2 = document.querySelector('.right_slider_icon2');
+let barsIcon=document.querySelector(".bars_icon");
+let navList=document.querySelector(".nav_list");
+let closeIcon=document.querySelector('.close_icon');
 
 
 
+
+logOut.addEventListener('click',()=>{
+    window.location.href='./entrance.html'
+    localStorage.removeItem('loggedInUser')
+})
 
 fetch('./api/videos.json')
     .then(resp => resp.json())
@@ -147,4 +156,10 @@ leftSliderIcon2.addEventListener("click", () => {
         count2 = 0
         slider2()
     }
+})
+barsIcon.addEventListener('click',()=>{
+navList.classList.add("nav_active")
+})
+closeIcon.addEventListener("click",()=>{
+    navList.classList.remove("nav_active")
 })

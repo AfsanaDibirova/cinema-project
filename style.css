@@ -83,6 +83,12 @@ body {
     margin-left: 58px;
 }
 
+.bars_icon {
+    display: none;
+    width: 18px;
+    margin-left: 8px;
+}
+
 .logo {
     width: 137px;
 }
@@ -141,7 +147,7 @@ body {
 
 .header_second_list {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     margin-bottom: 47px;
     gap: 34px;
 
@@ -310,7 +316,7 @@ footer {
 .footer_container {
     display: flex;
     /* justify-content: center;*/
-    align-items: center; 
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -325,17 +331,14 @@ footer {
 .nav_list_last {
     display: flex;
     gap: 69px;
-   
-    /* margin-left: 152px;
-    margin-right: 152px; */
-    /* text-align: center; */
-    
 }
-.nav_list_last li a{
-     color: var(--white);
-     font-size: 1.2rem;
+
+.nav_list_last li a {
+    color: var(--white);
+    font-size: 1.2rem;
     font-weight: 500;
 }
+
 .footer_container img {
     color: var(--red);
     font-size: 2.6rem;
@@ -343,6 +346,7 @@ footer {
 }
 
 .four_icons {
+    max-width: 194px;
     display: flex;
     gap: 22px;
 }
@@ -559,14 +563,287 @@ footer {
     text-align: center;
 }
 
-.logged_container svg{
-  fill: var(--white);  
+.logged_container svg {
+    fill: var(--white);
 }
-.logged_container{
+
+.logged_container {
     display: flex;
     align-items: center;
     gap: 5px;
 }
-.logged_container p{
+
+.logged_container p {
+    color: var(--white);
+}
+
+.close_icon {
+    display: none;
+}
+
+
+.movies_header {
+    background-color: var(--dark);
+    height: 100vh;
+}
+
+.kimi_card div {
+    display: flex;
+    align-items: center;
+}
+
+.kimi_card div svg {
+    margin-left: 22px;
+    margin-right: 16px;
+}
+
+.kimi_card div:last-child p:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.kimi_card p {
+    color: var(--lightgray);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.kimi_card img {
+    margin-bottom: 24px;
+}
+
+.kimi_card div:last-child {
+    margin-top: 10px;
+}
+
+.movies_header_first_card h1 {
+    color: var(--white);
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-top: 71px;
+    margin-bottom: 28px;
+}
+
+.movies_header_middle_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 109px;
+}
+
+.movies_header_butns {
+    display: flex;
+    gap: 47px;
+    margin-bottom: 29px;
+}
+
+.movies_header_butns button {
+    background: none;
+    border: none;
+    color: var(--lightgray);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.movies_header_butns button:first-child {
+    color: var(--red);
+    border-bottom: 2px solid var(--red);
+    padding-bottom: 9px;
+}
+
+.movies_header_second_card p {
+    background: linear-gradient(180deg, #8B8B8B 86.46%, rgba(139, 139, 139, 0.00) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 69px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.movies_header_btns2 {
+    display: flex;
+    gap: 73px;
+    align-items: center;
+}
+
+.movies_header_btns2_inner {
+    display: flex;
+    gap: 18px;
+}
+
+.movies_header_btns2 button {
+    border-radius: 90px;
+    background: var(--red);
+    border: none;
+    padding: 14px 55px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.movies_header_btns2_inner div {
+    width: 47px;
+    height: 47px;
+    border: 1px solid rgba(255, 255, 255, 0.52);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_p {
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 600;
+
+}
+
+.first_p {
+    color: var(--red);
+    font-size: 1.4rem;
+    font-weight: 600;
+
+}
+
+.second_p {
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 400;
+    align-items: center;
+}
+
+
+.myList_section_header {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.videos_container_second {
+    max-width: 773px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(373px, 1fr));
+    gap: 27px;
+}
+
+.video_card_second {
+    min-width: 373px;
+}
+
+.video_card_second img {
+    width: 100%;
+}
+
+.comments_content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.comment_container svg {
+    display: block;
+    margin-left: 100px;
+    margin-top: 22px;
+}
+
+.slider_my_list {
+    margin-top: 88px;
+}
+
+.end_comments_container h4 {
+    margin-bottom: 42px;
+    margin-top: 188px;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.end_comments_container h4 span {
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.end_comments_container {
+    padding-bottom: 71px;
+}
+
+.coment_card {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 60px;
+    position: relative;
+}
+.comment_p {
+    display: flex;
+    gap: 11px;
+}
+
+.comment_text_container p {
+    color: var(--white);
+    margin-top: 9px;
+}
+
+.comment_text {
+    color: var(--white);
+    font-size: 1.6;
+    font-weight: 300;
+
+}
+
+.comment_p h5 {
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+
+
+.read_more {
+    color: var(--lightgray);
+    font-size: 1.2rem;
+    font-weight: 500;
+    background: none;
+    border: none;
+    margin-left: 66px;
+}
+
+.coment_card svg {
+    width: 13px;
+    height: 9px;
+    flex-shrink: 0;
+}
+
+
+
+.comment_text_container span {
+    color: var(--lightgray);
+}
+
+.card_position {
+    border-radius: 4px;
+    border: 0.3px solid rgba(255, 255, 255, 0.30);
+    background: linear-gradient(225deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 100%);
+    backdrop-filter: blur(15px);
+    width: 100%;
+    height: 85px;
+    position: absolute;
+    top: -20px;
+    left: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--white);
 }
